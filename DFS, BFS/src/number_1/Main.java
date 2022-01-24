@@ -1,4 +1,4 @@
-//5장 DFS (음료수 얼려 먹기 )
+//5장 DFS (음료수 얼려 먹기)
 
 package number_1;
 

@@ -1,4 +1,4 @@
-//5장 BFS (미로 찾기 )
+//5장 BFS (미로 찾기)
 
 package number_2;
 
