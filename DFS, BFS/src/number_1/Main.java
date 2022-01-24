@@ -1,4 +1,4 @@
-//5장 DFS/BFS (음료수 얼려 먹기)
+//5장 DFS (음료수 얼려 먹기)
 
 package number_1;
 
@@ -10,7 +10,7 @@ public class Main {
     private static int m;
     private static int [][] array;
 
-    public static boolean bfs(int x, int y){
+    public static boolean dfs(int x, int y){
         if(x>=n ||y>=m || x<0 || y<0){
             return false;
         }
@@ -18,10 +18,10 @@ public class Main {
         if(array[x][y]==0){
             array[x][y]=1;
             //재귀함수 이용해 인접한 노드 bfs탐색
-            bfs(x-1,y);
-            bfs(x+1,y);
-            bfs(x,y-1);
-            bfs(x,y+1);
+            dfs(x-1,y);
+            dfs(x+1,y);
+            dfs(x,y-1);
+            dfs(x,y+1);
             return true;
         }
         return false;
@@ -49,7 +49,7 @@ public class Main {
 
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
-                if(bfs(i, j)){
+                if(dfs(i, j)){
                     result++;
                 }
             }
